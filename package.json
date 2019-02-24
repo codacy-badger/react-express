@@ -1,0 +1,35 @@
+{
+  "name": "@react-express/core",
+  "version": "1.0.0",
+  "description": "React-Express is React.js and Express (SSR) Framework.",
+  "main": "./lib/index.js",
+  "bin": {
+    "react-express": "./bin/react-express.js"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamalion-org/react-express.git"
+  },
+  "keywords": [
+    "react",
+    "express",
+    "generator",
+    "webpack",
+    "react-express"
+  ],
+  "author": "tamalion",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tamalion-org/react-express/issues"
+  },
+  "homepage": "https://www.enterprise-programmer.work/",
+  "dependencies": {
+    "ava": "",
+    "commander": "",
+    "current-dir": "",
+    "file-system": ""
+  }
+}

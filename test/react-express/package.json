@@ -1,0 +1,41 @@
+{
+  "name": "@react-express/core",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build-css": "node-sass vendors/scss/style.scss public/stylesheets/client.min.css --output-style compressed",
+    "debug-css": "node-sass vendors/scss/style.scss public/stylesheets/client.min.css --output-style nested --indent-width 2 -w",
+    "start": "npm run build-css && webpack -p && babel-node server.js",
+    "debug": "node-sass vendors/scss/style.scss public/stylesheets/client.min.css --output-style nested --indent-width 2 && concurrently \"npm run debug-css\" \"webpack -d --watch\" \"nodemon --exec babel-node server.js\" "
+  },
+  "dependencies": {
+    "@babel/cli": "7.x.x",
+    "@babel/core": "7.x.x",
+    "@babel/node": "7.x.x",
+    "@babel/plugin-proposal-class-properties": "7.x.x",
+    "@babel/plugin-transform-react-jsx": "7.x.x",
+    "@babel/preset-env": "7.x.x",
+    "@babel/preset-react": "7.x.x",
+    "babel-loader": "8.x.x",
+    "body-parser": "1.x.x",
+    "compression": "1.x.x",
+    "concurrently": "4.x.x",
+    "express": "4.x.x",
+    "morgan": "1.x.x",
+    "node-jsx": "0.x.x",
+    "node-sass": "4.x.x",
+    "nodemon": "1.x.x",
+    "react": "16.x.x",
+    "react-dom": "16.x.x",
+    "react-router-dom": "4.x.x",
+    "react-redux": "6.x.x",
+    "redux-thunk": "2.x.x",
+    "redux": "4.x.x",
+    "serve-favicon": "2.x.x",
+    "webpack": "4.x.x",
+    "webpack-cli": "3.x.x"
+  },
+  "devDependencies": {
+    "axios": "0.x.x"
+  }
+}
